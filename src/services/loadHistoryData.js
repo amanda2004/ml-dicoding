@@ -7,7 +7,7 @@ const loadHistoryData = async () => {
     databaseId: 'predictions',
   });
 
-  const predictCollection = db.collection('prediction');
+  const predictCollection = db.collection('predictions');
 
   const snapshot = await predictCollection.orderBy('createdAt', 'desc').get();
 
