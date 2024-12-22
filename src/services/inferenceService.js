@@ -17,7 +17,7 @@ const predictBinaryClassificationCancer = async (model, image) => {
   if (label === 'Cancer') {
     suggestion = 'Segera periksa ke dokter!';
   } else {
-    suggestion = 'Anda sehat!';
+    suggestion = 'Penyakit kanker tidak terdeteksi.';
   }
   return { confidenceScore, label, suggestion };
 };
